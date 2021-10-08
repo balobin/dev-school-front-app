@@ -19,6 +19,8 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
         cache: gradle
+    - name: Cache
+      uses: actions/cache@v2.1.6   
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
